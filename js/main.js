@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $('#addPokemon').click(function (e) {
     var searchTerm = $('#pokemonName').val().toLowerCase();
-    var url = "http://pokeapi.co/api/v2/pokemon/"+ searchTerm;
+    var url = "https://pokeapi.co/api/v2/pokemon/"+ searchTerm;
     $.ajax ({
         url: url,
         datatype: "json",
@@ -24,7 +24,7 @@ $(document).ready(function(){
 });
 $('#random').click(function () {
   var randomId = Math.floor(Math.random()*803);
-  var url = "http://pokeapi.co/api/v2/pokemon/"+ randomId;
+  var url = "https://pokeapi.co/api/v2/pokemon/"+ randomId;
   $.ajax ({
       url: url,
       datatype: "json",
